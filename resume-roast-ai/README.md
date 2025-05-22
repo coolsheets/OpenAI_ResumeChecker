@@ -1,36 +1,63 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Phase 2 (20–40 min): Input UI & Basic API Route
+**Goal**: Create the frontend input boxes and set up a backend API route /api/roast.
 
-## Getting Started
+## 1. 🧑‍🎨 app/pages.tsx — UI Inputs
+The main page should roughly resemble the pages.tsx file in this folder.
 
-First, run the development server:
+## 2. 🧠 app/api/roast/route.ts — Basic API Handler
+A POST call to openAI's completions API. The prompt can be adjusted to tune the responses to your desire. Use Postman to try out the endpoint at http://localhost:3000/api/roast and give it a ```resume``` and ```job``` field in the body. Here is a sample to try out:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+**resume** (The Legend of Chad):
+```Name: Chad Thunderbyte  
+Email: theChad@hotmail.biz  
+Phone: (only available on Tuesdays)  
+LinkedIn: lolnah  
+
+Summary:  
+I’m just built different. Once beat Solitaire on Expert mode with one hand. Looking to "get that bag" as soon as possible. Open to anything that pays in cash or pizza.
+
+Experience:  
+- CEO of My House (2019–Present)  
+  • Managed several failed business ventures including reselling airpods I found on the bus.  
+  • Negotiated peace between my two cats during mealtime.  
+
+- Influencer (Instagram, TikTok)  
+  • Grew follower count from 12 to 58 in just 3 years.  
+  • Created viral content such as "Slipping on a Banana in Public for Likes."  
+
+Skills:  
+- Strong vibes  
+- Mediocre typing speed  
+- Fluent in sarcasm and emojis  
+- Proficient in YOLO decision making  
+- Can microwave 3 different kinds of ramen without burning them
+
+Education:  
+- Youtube University  
+  • Majored in Crypto Investing (Lost it all)  
+  • Minor in Motivational Quotes
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**job** (Senior Backend Engineer – FinTech):
+```
+Company: StatFirm™
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+We are seeking a highly motivated and detail-oriented **Senior Backend Engineer** with 7+ years of production experience to help us revolutionize enterprise-level financial analytics.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Responsibilities:
+- Architect scalable Node.js services with 99.999% uptime
+- Collaborate with DevOps to containerize services in Kubernetes
+- Implement secure APIs to handle financial transactions and personal data
+- Write clean, tested TypeScript code with CI/CD pipelines
+- Mentor junior developers
 
-## Learn More
+Qualifications:
+- Proven production experience in Node.js and PostgreSQL
+- Strong understanding of financial compliance regulations
+- Cloud platform expertise (AWS or Azure)
+- Degree in Computer Science or related field
+- Bonus: Open-source contributions or published technical articles
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Salary: $140k–$180k + equity  
+Location: Hybrid, New York City
+```
